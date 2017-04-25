@@ -6,7 +6,6 @@ from GameResources import *
 digits = '123456789'
 rows = 'ABCDEFGHI'
 
-
 def play(values_list):
     pygame.init()
 

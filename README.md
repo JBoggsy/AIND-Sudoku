@@ -3,17 +3,17 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: The nature of a pair of naked twins means that we know that anything else within their unit cannot be the values which are twinned. Because two boxes in one unit have the same two numbers and only those two numbers, we know that those two numbers can only appear in those boxes. Thus, we have a new constraint: other boxes in a unit with a pair of naked twins cannot have either of the values in the naked twins. We can propagate this constraint across the unit by removing the values of the naked twins from the possible values of other boxes in the unit. As with other forms of constraint propagation, this might reveal more naked twins, such that we can repeat the process again.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: We merely create an additional two units across which the constrain propagation techniques we use for standard sudoku must be applied. The core idea is the same. 
 
 ### Install
 
 This project requires **Python 3**.
 
-We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
+We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.
 Please try using the environment we provided in the Anaconda lesson of the Nanodegree.
 
 ##### Optional: Pygame
@@ -32,4 +32,3 @@ If not, please see how to download pygame [here](http://www.pygame.org/download.
 ### Visualizing
 
 To visualize your solution, please only assign values to the values_dict using the ```assign_values``` function provided in solution.py
-
